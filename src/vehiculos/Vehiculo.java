@@ -35,12 +35,7 @@ public class Vehiculo {
     public void setAno(Integer ano) {this.ano = ano; }
     public void setCapacidadCargaKg(int capacidadCargaKg) {this.capacidadCargaKg = capacidadCargaKg;}
 
-    public void mostrarInformacion() {
-        System.out.println("Patente: " + patente);
-        System.out.println("Marca: " + marca);
-        System.out.println("Año: " + ano);
-        System.out.println("Capacidad de carga (kg): " + capacidadCargaKg);
-    }
+
 
 }
 
