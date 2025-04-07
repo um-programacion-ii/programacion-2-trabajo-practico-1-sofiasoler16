@@ -6,10 +6,12 @@ public class Main {
         Vehiculo v2 = new Vehiculo("AG762TR", "Ford", 2025, 1500);
         Vehiculo v3 = new Vehiculo("AB578FR", "Renault", 2018, 1200);
 
-        v1.mostrarInformacion();
+        vehiculoPrinter printer = new vehiculoPrinter();
+
+        printer.imprimir(v1);
         System.out.println();
-        v2.mostrarInformacion();
+        printer.imprimir(v2);
         System.out.println();
-        v3.mostrarInformacion();
+        printer.imprimir(v3);
     }
 }
