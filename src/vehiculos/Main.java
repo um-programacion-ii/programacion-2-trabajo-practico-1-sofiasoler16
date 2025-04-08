@@ -2,9 +2,9 @@ package vehiculos;
 
 public class Main {
     public static void main(String[] args) {
-        Vehiculo v1 = new Vehiculo("AF632TE", "Toyota", 2023, 1000);
-        Vehiculo v2 = new Vehiculo("AG762TR", "Ford", 2025, 1500);
-        Vehiculo v3 = new Vehiculo("AB578FR", "Renault", 2018, 1200);
+        vehiculo v1 = new vehiculo("AF632TE", "Toyota", 2023, 1000);
+        vehiculo v2 = new vehiculo("AG762TR", "Ford", 2025, 1500);
+        vehiculo v3 = new vehiculo("AB578FR", "Renault", 2018, 1200);
 
         vehiculoPrinter printer = new vehiculoPrinter();
 
