@@ -14,10 +14,12 @@ public class Main {
         System.out.println();
         printer.imprimir(v3);
 
-        camion c1 = new camion("JKL456", "Volvo", 2022, 3000, true);
-        System.out.println("Camión " + c1.getMarca() + " creado: " + c1.getPatente() + " con acoplado: " + c1.getTieneAcoplado());
+        vehiculo c1 = new camion("JKL456", "Volvo", 2022, 3000, true);
 
+        System.out.println("Camión " + c1.getMarca() + " creado: " + c1.getPatente() + " con acoplado: " + ((camion)c1).getTieneAcoplado());
         printer.imprimir(c1);
 
+        vehiculo a1 = new auto("AB578UT", "Toyota", 2019, 1500, 4);
+        printer.imprimir(a1);
     }
 }
