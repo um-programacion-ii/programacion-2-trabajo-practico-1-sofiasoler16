@@ -1,5 +1,7 @@
 package vehiculos;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         vehiculo v1 = new vehiculo("AF632TE", "Toyota", 2023, 1000);
@@ -21,5 +23,20 @@ public class Main {
 
         vehiculo a1 = new auto("AB578UT", "Toyota", 2019, 1500, 4);
         printer.imprimir(a1);
+
+
+        //Usamos ArrayList<vehiculo>
+        // Crear una lista dinámica de vehículos
+        ArrayList<vehiculo> vehiculos = new ArrayList<>();
+
+        // Agregar un Vehiculo común
+        vehiculos.add(v1);
+
+        // Agregar un Camion
+        vehiculos.add(c1);
+
+        // Agregar un Auto
+        vehiculos.add(a1);
+
     }
 }
