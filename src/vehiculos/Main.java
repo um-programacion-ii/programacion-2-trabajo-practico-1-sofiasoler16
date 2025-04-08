@@ -17,5 +17,7 @@ public class Main {
         camion c1 = new camion("JKL456", "Volvo", 2022, 3000, true);
         System.out.println("Camión " + c1.getMarca() + " creado: " + c1.getPatente() + " con acoplado: " + c1.getTieneAcoplado());
 
+        printer.imprimir(c1);
+
     }
 }
