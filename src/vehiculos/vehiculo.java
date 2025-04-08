@@ -1,12 +1,12 @@
 package vehiculos;
 
-public class Vehiculo {
+public class vehiculo {
     private String patente;
     private String marca;
     private int ano;
     private int capacidadCargaKg;
 
-    public Vehiculo(String patente, String marca, Integer ano, Integer capacidadCargaKg) {
+    public vehiculo(String patente, String marca, Integer ano, Integer capacidadCargaKg) {
         //validaciones
         if (patente == null || patente.isEmpty()) {
             throw new IllegalArgumentException("La patente no puede ser nula ni vacía.");
