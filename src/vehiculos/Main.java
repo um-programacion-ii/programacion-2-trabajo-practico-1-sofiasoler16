@@ -8,11 +8,9 @@ public class Main {
 
         vehiculoPrinter printer = new vehiculoPrinter();
 
-        printer.imprimir(v1);
-        System.out.println();
 
         vehiculo c1 = new camion("JKL456", "Volvo", 2022, 3000, true);
-        
+
         vehiculo a1 = new auto("AB578UT", "Toyota", 2019, 1500, 4);
 
 
@@ -29,10 +27,21 @@ public class Main {
         // Agregar un Auto
         vehiculos.add(a1);
 
+        String patenteBuscada = "JKL456";
+
+        boolean encontrado = false;
 
         for (vehiculo v : vehiculos) {
-            printer.imprimir(v);
-            System.out.println();
+            if (v.getPatente().equalsIgnoreCase(patenteBuscada)) {
+                System.out.println("Vehículo encontrado:");
+                printer.imprimir(v);
+                encontrado = true;
+                break; // cortamos el bucle porque ya lo encontramos
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No se encontró ningún vehículo con la patente: " + patenteBuscada);
         }
 
     }
