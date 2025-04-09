@@ -1,6 +1,65 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
 
+# Alumno
+Soler Sofia
+
+# Intrucciones de como ejecutar el codigo
+1. Desde la terminal, ejecutar:
+git clone https://github.com/sofiasoler16/programacion-2-trabajo-practico-1-sofiasoler16.git
+
+2. Compilar el código:
+   (Estar en la carpeta donde están los archivos .java)
+   javac src/vehiculos/*.java -d out
+
+3. Ejecutar:
+java -cp out vehiculos.Main
+
+# Requisitos previos
+
+- **Java JDK** 8 o superior - (se usó Java 21)
+- **IntelliJ IDEA** 
+- **Git** 
+- Acceso a GitHub
+
+# Ejemplos de uso
+        vehiculo v1 = new vehiculo("AF632TE", "Toyota", 2023, 1000);
+        vehiculo c1 = new camion("JKL456", "Volvo", 2022, 3000, true);
+        vehiculo a1 = new auto("AB578UT", "Toyota", 2019, 1500, 4);
+        
+        vehiculoPrinter printer = new vehiculoPrinter();
+
+        ArrayList<vehiculo> vehiculos = new ArrayList<>();
+
+        vehiculos.add(v1);
+        vehiculos.add(c1);
+        vehiculos.add(a1);
+
+        String patenteBuscada = "JKL456";
+
+        boolean encontrado = false;
+
+
+        for (vehiculo v : vehiculos) {
+            if (v.getPatente().equalsIgnoreCase(patenteBuscada)) {
+                System.out.println("Vehículo encontrado:");
+                printer.imprimir(v);
+                encontrado = true;
+                break; // cortamos el bucle porque ya lo encontramos
+            }
+        }
+
+
+# Respuesta de ejemplo
+Vehículo encontrado:
+Patente: JKL456
+Marca: Volvo
+Año: 2022
+Capacidad de carga (kg): 3000
+Es un camión.
+¿Tiene acoplado?: Sí
+
+
 ## 📌 Objetivo General
 
 Desarrollar una aplicación en Java para gestionar vehículos de una empresa, aplicando los principios de programación orientada a objetos y los **primeros tres principios SOLID**:  
